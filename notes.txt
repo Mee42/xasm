@@ -1,0 +1,11 @@
+calling convention:
+
+32-bit ints are passed through these registers in order: ebx, ecx, edx. Nothing on the stack (yet)
+Callee must reset the stack to the state it was before the call.
+Callee must preserve ebp.
+
+
+E*X: 12 34 56 78
+*X :       56 78
+*H :       56
+*L :          78
