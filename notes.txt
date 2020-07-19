@@ -9,3 +9,10 @@ E*X: 12 34 56 78
 *X :       56 78
 *H :       56
 *L :          78
+
+
+error outputs:
+0: successful exit
+1: unspecified error
+2: only 512 characters are allowed in the input buffer
+
