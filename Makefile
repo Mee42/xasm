@@ -6,10 +6,10 @@ default: build
 
 build/main.o: src/main.asm
 	@mkdir -p build/
-	nasm src/main.asm  -f elf32 -o build/main.o
+	nasm -g src/main.asm  -f elf32 -o build/main.o
 
 build/a.out: build/main.o
-	ld -m elf_i386 -s -o build/a.out build/main.o
+	ld -m elf_i386 -o build/a.out build/main.o
 
 run: build
 	@echo == running
